@@ -7,8 +7,16 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Syncade",
-  description: "The intelligent note-taking app",
+  title: 'Syncade',
+  description: 'Get a Second Brain with Syncade, an intelligent note-taking app powered by AI',
+  openGraph: {
+    title: 'Syncade',
+    description: 'Get a Second Brain with Syncade, an intelligent note-taking app powered by AI',
+    images: ['/opengraph-image.png'], // Ensure this is the correct path in the public directory
+    type: 'website',
+  },
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.syncade.io' : 'http://localhost:3000'),
+  // Additional metadata options
 };
 
 export default function RootLayout({
