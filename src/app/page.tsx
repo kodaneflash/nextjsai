@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.svg";
 import { Button } from "@/components/ui/button";
 import { auth } from "@clerk/nextjs";
 import Image from "next/image";
@@ -19,8 +19,8 @@ export default function Home() {
         </span>
       </div>
       <p className="max-w-prose text-center">
-        An intelligent note-taking app with AI integration, built with OpenAI,
-        Pinecone, Next.js, Shadcn UI, Clerk, and more.
+        Get a Second Brain with Syncade, an intelligent note-taking app 
+        powered by AI.
       </p>
       <Button size="lg" asChild>
         <Link href="/notes">Open</Link>
