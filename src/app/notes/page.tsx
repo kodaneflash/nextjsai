@@ -5,6 +5,15 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Syncade - Notes",
+  description: 'Get a Second Brain with Syncade, an intelligent note-taking app powered by AI',
+  openGraph: {
+    title: 'Syncade',
+    description: 'Get a Second Brain with Syncade, an intelligent note-taking app powered by AI',
+    images: ['/opengraph-image.png'], // Ensure this is the correct path in the public directory
+    type: 'website',
+  },
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.syncade.pro' : 'http://localhost:3000'),
+  // Additional metadata options
 };
 
 export default async function NotesPage() {

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     images: ['/opengraph-image.png'], // Ensure this is the correct path in the public directory
     type: 'website',
   },
-  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.syncade.io' : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.syncade.pro' : 'http://localhost:3000'),
   // Additional metadata options
 };
 
