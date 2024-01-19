@@ -1,10 +1,11 @@
 import logo from "@/assets/logo.svg";
+import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { auth } from "@clerk/nextjs"
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+
 
 export const metadata: Metadata = {
   title: 'Syncade',
@@ -22,7 +23,10 @@ export const metadata: Metadata = {
 export default function Home() {
   const { userId } = auth();
 
+
+  
   if (userId) redirect("/notes");
+
 
   return (
     <main className="flex h-screen flex-col items-center justify-center gap-5">
