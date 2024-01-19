@@ -18,10 +18,9 @@ export default function Home() {
           Syncade
         </span>
       </div>
-      <p className="max-w-prose text-center">
-        Get a Second Brain with Syncade, an intelligent note-taking app 
-        powered by AI.
-      </p>
+      <h2 className="max-w-prose text-center">
+      Get a Second Brain with Syncade, an intelligent note-taking app powered by AI.
+      </h2>
       <Button size="lg" asChild>
         <Link href="/notes">Open</Link>
       </Button>
