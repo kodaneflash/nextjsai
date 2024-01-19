@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Syncade',
     description: 'Get a Second Brain with Syncade, an intelligent note-taking app powered by AI',
-    images: ['/opengraph-image.png'], // Ensure this is the correct path in the public directory
+    images: ['/opengraph-image.png'], 
+    url: 'https://www.syncade.io/',
     type: 'website',
   },
   metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://www.syncade.io' : 'http://localhost:3000'),
